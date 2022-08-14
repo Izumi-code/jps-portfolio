@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@200;400&family=Oswald&family=Roboto+Slab&display=swap');
+
+/* .hero {
+    width: 100%;
+    max-height: 700px;
+} */
+
+.info {
+    height: 750px;
+    padding: 100px 80px;
+    max-width: 600px;
+}
+#firsth1 {
+    font-size: 19px;
+    letter-spacing: 2px;
+    
+    font-family: 'cairo', sans-serif;
+}
+#secondh1 {
+    font-size: 60px;
+    font-family: 'cairo', sans-serif;
+}
+#thirdh1 {
+    line-height: 55px;
+    font-size: 100px;
+    padding-bottom: 40px;
+    color: #9900b1;
+    font-family: 'cairo', sans-serif;
+}
+#fourthh1 {
+    padding-bottom: 20px;
+    color: #9900b1;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'cairo', sans-serif;
+}
+#intro {
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 28px 100px; 
+    font-size: 14px;
+}
+
+/* .logo {
+    margin-right: auto;
+    font-size: 20px;
+} */
+
+.navbar a{
+    margin-right: 40px;
+    
+}
+
+.profilePic {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 100px;
+    overflow: hidden;
+}
+
+.navbar a{
+    display: inline-block;
+    position: relative;
+}
+
+.navbar a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9900b1;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.navbar a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* .hoverUnderline:hover {
+    color: blue;
+} */
+
+.sidebar {
+    position: absolute;
+    width: 1000px;
+    z-index: -1; 
+    height: 700px;  
+    border: solid 3px #000;
+    border-color: #9900b1 transparent transparent;
+    border-radius: 50%/50% 50% 0 0;
+    transform: rotate(90deg);  
+    left: -200px;
+    display: inline-block;
+}
+
+#icons {
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 25px;    
+}
+#icons a {
+    padding: 11px;
+    margin-left: -11px;
+}
+
+.home {
+    margin-left: 50%;
+    margin-top: 200px;
+    position: absolute;
+}
+
+@media screen and (max-width: 1168px){
+    .sidebar {
+        display: none;
+    }
+    #thirdh1 {
+        font-size: 80px;
+    }
+    .home{
+        position: relative;
+        display: block;
+        
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar a:after {
+        display: none;
+    }
+    .navbar a:hover:after {
+        display: none;
+    }
+}
+
+
+  
+  
+
+  
